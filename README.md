@@ -1,7 +1,7 @@
 
 # O2 email logs summary
 ### OPIS
-Program jest stworzony w języku java wersji 11, ale moze rowniez byc 8.
+Program jest stworzony w języku java wersji 7.
 Jego zadaniem jest podsumowanie logów z poczty O2 i wyswietlenie ich w streszczonej formie.
 
 ### URUCHOMIENIE
