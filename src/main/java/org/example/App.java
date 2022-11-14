@@ -1,6 +1,9 @@
 package org.example;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
 
 /**
  * email logs info
@@ -12,7 +15,11 @@ public class App
         int passCounter=0;
         int failCounter=0;
         int logs=0;
+        StringTokenizer stringTokenizer;
+        String tmpString = "";
+        int tmpStrCount=0;
         int protWww = 0,protImap = 0,protPop3 = 0,protSmtp = 0;
+        List<String> list = new ArrayList<>();
 
         System.out.println( "Logowanie plik "+args[0] );
 
@@ -24,8 +31,18 @@ public class App
             String line;
             while ((line=bufferedReader.readLine())!=null){
                 logs++;
-
-                if(line.contains("PASS")) {
+                stringTokenizer = new StringTokenizer(line," ");
+                tmpStrCount=0;
+                while (stringTokenizer.hasMoreTokens()) {
+                tmpStrCount++;
+                     tmpString = stringTokenizer.nextToken();
+                     if (tmpStrCount==4){
+                         list.add(tmpString);
+                     }
+                }
+                tmpString="";
+                tmpStrCount=0;
+                    if(line.contains("PASS")) {
                     passCounter++;
                 } else {
                     failCounter++;
@@ -42,7 +59,7 @@ public class App
             int allLogs = (logs / 10);
             int wrongLogs = (failCounter/10);
 
-            System.out.println(" ŁąCZNA LICZBA LOGOWAŃ "+logs);
+            System.out.println(" ŁąCZNA LICZBA LOGOWAŃ :"+logs);
             System.out.println(" LICZBA UDANYCH PRAWIDŁOWYCH LOGOWAŃ :"+passCounter);
             System.out.println(" LICZBA PRÓB WŁAMAŃ DO SKRZYNKI :"+failCounter+"  \n");
             System.out.println("UżYCIE PROTOKOŁÓW:");
@@ -58,6 +75,8 @@ public class App
             for(int j=0;j<wrongLogs;j++){
                 System.out.print("#");
             }
+            System.out.println("\n---------------------------------------------");
+            list.stream().forEach(System.out::println);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
