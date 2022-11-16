@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a91c40a-f022-4e8e-900f-f77f47b51819" name="Changes" comment="commit with readme">
-      <change afterPath="$PROJECT_DIR$/target/emailog-1.0-SNAPSHOT.jar" afterDir="false" />
+    <list default="true" id="1a91c40a-f022-4e8e-900f-f77f47b51819" name="Changes" comment="commit with ip list">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SortIpAddr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/emailog-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/emailog-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -113,7 +120,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668372354851</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit with ip list">
+      <created>1668465261623</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668465261623</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit with ip list">
+      <created>1668465296689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668465296689</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +153,7 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="next commit" />
     <MESSAGE value="commit with readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit with readme" />
+    <MESSAGE value="commit with ip list" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit with ip list" />
   </component>
 </project>

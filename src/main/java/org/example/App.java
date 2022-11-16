@@ -1,9 +1,7 @@
 package org.example;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 /**
  * email logs info
@@ -76,7 +74,13 @@ public class App
                 System.out.print("#");
             }
             System.out.println("\n---------------------------------------------");
-            list.stream().forEach(System.out::println);
+
+            SortIpAddr sortIpAddr = new SortIpAddr(list);
+            Map<String, Integer> sorted = new HashMap<>();
+            sorted = sortIpAddr.sortedList(list);
+            Map<String, Integer> finalSorted = sorted;
+            sorted.forEach((k, v)-> System.out.println(k+" -> "+(v/ finalSorted.size())+" times"));
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
