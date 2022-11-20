@@ -4,7 +4,7 @@
 ----
 
 ### OPIS
-Program jest stworzony w języku java wersji 7.
+Program jest stworzony w języku java wersji 8.
 Jego zadaniem jest podsumowanie logów z poczty O2 i wyswietlenie ich w streszczonej formie.
 Aby uzyskac dane logowania do konta w poczcie o2, zaloguj sie do swojego konta na stronie poczta.o2.pl
 Przejdz do zakladki *profil*, dalej bedzie dostepna opcja **Historia logowania** i pobierz *wszystkie logowaia do Twojego konta* (w formie archiwum zip).
@@ -37,5 +37,12 @@ POP3    10
 SMTP    60
 ALL  :  #####################################
 FAIL:   ##############################%   
+
+PORT
+46.166.156.170 -> 16 times
+61.109.152.175 -> 1 times
+82.163.147.48 -> 8 times
+...
+
     
 ````
